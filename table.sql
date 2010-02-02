@@ -1,4 +1,5 @@
 create table xmobile (
+    "taskidentifier" varchar(1024),
     "tasktypeds.taskcategory" varchar(1024),
     "tasktypeds.tasktypeid" varchar(1024) not null,
     "tasktypeds.skilldurationds.skillcode" varchar(1024),
@@ -30,6 +31,7 @@ create table xmobile (
     primary key ("tasktypeds.tasktypeid")
 );
 insert into xmobile values(
+     "ST2UQQ72",
      "R",
      "R1",
      "RFJBAS",
