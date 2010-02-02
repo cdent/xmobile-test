@@ -1,0 +1,23 @@
+
+To make it go. For now. This will change as the database
+evolves.
+
+sqlite3 /tmp/xmobile.db < table.sql
+./mkinstance foo
+cd foo
+ln -s ../mangler.py .
+ln -s ../tiddlywebplugins .
+echo "import mangler" >> tiddlywebconfig.py
+twanager server &
+# go to http://0.0.0.0:8080/bags/xmobile/tiddlers
+
+You need to have the following tiddlyweb stuff:
+
+tiddlyweb
+tiddlywebwiki (and the many dependencies)
+tiddlywebplugins.mappingsql
+
+Have a look at tiddlywebplugins/xmobile/__init__.py for some
+configuration defaults. The 'open_fields' stuff is a klingon
+from wiki-data and its auth requirements, and will change
+eventually.
