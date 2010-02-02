@@ -1,7 +1,7 @@
 //{{{
 (function() {
 
-var data = store.getTiddler("JSON").text;
+var data = store.getTiddler("data").text;
 eval("data = " + data);
 
 store.saveTiddler(data.title, data.title, data.text, data.modifier,
