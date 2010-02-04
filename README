@@ -11,7 +11,12 @@ Python packages (and their dependencies):
 
 * tiddlywebwiki
 * tiddlywebplugins.diststore
-* tiddlywebplugins.mappingsql
+* tiddlywebplugins.mappingsql (version 0.2 or beyond)
+
+These can be installed from PyPI, the central Python Package index,
+as follows:
+
+  pip install -U tiddywebplugins tiddlywebplugins.diststore tiddlywebplugins.mappingsql
 
 Then to establish a working server, from within the Git repository
 run the following commands:
@@ -32,6 +37,8 @@ run the following commands:
 Have a look at tiddlywebplugins/xmobile/__init__.py for some
 configuration defaults. The 'open_fields' stuff is a klingon
 from wiki-data and its auth requirements, and will change
-eventually.
+eventually. Those configuration defaults can be overridden by
+editing new information into tiddlywebconfig.py in the TiddlyWeb
+instance directory.
 
 A Peermore, Osmosoft, BT production.
